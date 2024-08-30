@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMy94tWPm8Ag19tVrAg1YBkMhF1mMiGwrAjQ&s");
+  background-size: cover;
+}
+.container .login {
+  height: 350px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: -1px -1px 12px 4px oldlace;
+  background-color: transparent;
+}
+.container .login form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 20px;
+}
+.container .login form .heading {
+  color: blanchedalmond;
+  font-family: "Courier New", Courier, monospace;
+}
+.container .login form .eamil, .container .login form .password {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 55px;
+}
+.container .login form .eamil label, .container .login form .password label {
+  font-family: cursive;
+  color: rgb(255, 249, 249);
+}
+.container .login form .eamil input, .container .login form .password input {
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid transparent;
+}
+.container .login form .eamil input::-moz-placeholder, .container .login form .password input::-moz-placeholder {
+  color: rgb(56, 23, 23);
+}
+.container .login form .eamil input::placeholder, .container .login form .password input::placeholder {
+  color: rgb(56, 23, 23);
+}
+.container .login form .check {
+  display: flex;
+  align-items: start;
+  justify-self: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 45px;
+  color: rgb(173, 194, 194);
+}
+.container .login form .check a {
+  text-decoration: none;
+  color: rgb(29, 72, 226);
+}
+.container .login form .check a:hover {
+  border-bottom: 0.5px solid blue;
+}
+.container .login form .btn {
+  width: 40%;
+  height: 40px;
+  font-size: 25px;
+  font-family: cursive;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(98, 6, 185);
+  box-shadow: -1px -1px 6px 2px oldlace;
+}
+.container .login form .btn:hover {
+  cursor: pointer;
+  background-color: rgb(8, 8, 7);
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 425px) {
+  .container .login form .heading {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=login_page.css.map */

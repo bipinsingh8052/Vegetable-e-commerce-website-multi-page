@@ -1,0 +1,11 @@
+@mixin Flexbox(){
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin universal(){
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}

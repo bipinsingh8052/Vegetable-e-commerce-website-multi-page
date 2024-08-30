@@ -1,0 +1,117 @@
+@import "variable";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.hero_section{
+    .first_section{
+        width: 100%;
+        height: 20px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        justify-content: space-evenly;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color:$herosection_background;
+        .phone{
+            display: flex;
+            gap: 20px;
+            p{
+                font-size: 15px
+            }
+        }
+        .message{
+            @extend .phone;
+        }
+        .delivery{
+            font-size: 15px;
+        }
+    }
+    // .navbar {
+    //     display: flex;
+    //     background-color: pink;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     height: 80px;
+    //      ul {
+    //         display: flex;
+    //         list-style: none;
+    //         gap: 20px;
+    //         margin-right: 50px;
+    //         li a {
+    //             text-decoration: none;
+    //             font-size: 20px;
+    //             color: black;
+    //           }
+    //       }
+    //       label {
+    //         margin-right: 50px;
+    //         display: none;
+    //         font-size: 30px;
+    //       }
+    //       #click{
+    //         display: none;
+    //       }
+    //   }
+      
+
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        label{
+            display: none;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+      
+      
+}
+@media screen and (max-width: 768px) {
+    // body {
+    //   background-color: yellow;
+    // }
+    // label{
+    //   display: block;
+  
+    // }
+    // .navbar ul{
+    //   flex-direction: column;
+    //   position: absolute;
+    //   top: 80px;
+    //   background-color: beige;
+    //   width: 100%;
+  
+    //   display: none;
+    // }
+    // #click:checked ~ nav ul{
+    //   display: block;
+    // }
+    .hero_section{
+        .first_section{
+            .phone{
+                display: none;
+            }
+            .message{
+                display: none;
+            }
+            .delivery{
+                font-size: 12px;
+            }
+        }
+        
+    }
+
+    
+  }
