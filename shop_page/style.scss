@@ -150,7 +150,7 @@
     .banner_section{
         height: 500px;
         width: 100%;
-        background-image: url('https://t4.ftcdn.net/jpg/09/05/23/87/360_F_905238741_5395g4dA6BnfHU8SLalOs6J6Xk81eP6d.jpg');
+        background-image: url('https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?cs=srgb&dl=pexels-enginakyurt-1435904.jpg&fm=jpg');
         background-size: cover;
         display: flex;
         justify-content: center;
@@ -195,6 +195,80 @@
         .heading_first{
              background-color: $herosection_background;
              color: white;   
+        }
+    }
+    .card{
+
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        // grid-template-columns: 200px ;
+        // grid-template-rows: 250px 250px 250px 250px;
+        .shopping_card{
+            height: 250px;
+            margin: 20px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+                box-shadow: -1px 1px 1px 5px #d0b3b39b;
+            .card_heading{
+                height: 70%;
+                width: 100%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .card_main{
+                padding-left: 10px;
+                .price{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    gap: 10px;
+                    p{
+                        font-size: 14px;
+                        color: #000000;
+                    }
+                    del{
+                        font-size: 8px;
+                        color: #808080;
+                    }
+                }
+            }
+            .card_footer{
+                height: 10%;
+                width: 100%;
+                display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    justify-content: space-around;
+              
+                a{
+                    height: 100%;
+                    width: 100%;
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    justify-content: space-around;
+                    color: white;
+                    background-color:$herosection_background;
+                    color: whitesmoke;
+                    border: 0.2px solid transparent;
+                    &:hover{
+    
+                        transition: all 1s ease-in;
+                        border: 0.2px solid $herosection_background;
+                        background-color:white;
+                        color: $herosection_background;
+                    }
+                }
+            }
         }
     }
 }

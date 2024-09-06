@@ -160,6 +160,10 @@
   width: 540px;
   border: 0.5 solid transparent;
 }
+.main .information_second .map iframe {
+  height: 100%;
+  width: 100%;
+}
 .main .information_second .from {
   height: 560px;
   background-color: rgb(255, 255, 255);
